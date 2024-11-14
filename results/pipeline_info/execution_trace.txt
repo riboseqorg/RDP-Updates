@@ -1,0 +1,5 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	0e/c8e203	3677298	COLLECT	FAILED	2	2024-11-11 16:32:20.564	66ms	62ms	-	-	-	-	-
+2	46/7a9f14	3677340	COLLECT	FAILED	2	2024-11-11 16:32:20.652	63ms	2ms	-	-	-	-	-
+3	c6/53a1b7	3677382	COLLECT	FAILED	2	2024-11-11 16:32:20.725	44ms	2ms	-	-	-	-	-
+4	0b/7a6b08	3677424	COLLECT	FAILED	2	2024-11-11 16:32:20.778	45ms	1ms	-	-	-	-	-
