@@ -17,7 +17,7 @@ process GENERATE_FIXTURES {
         path geo_accessions
     
     output:
-        path "riboseqorg_metadata_fixtures.json ", emit: fixtures
+        path "riboseqorg_metadata_fixtures.json", emit: fixtures
 
     script:
     """
