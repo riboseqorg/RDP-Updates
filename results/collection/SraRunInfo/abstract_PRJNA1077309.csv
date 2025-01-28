@@ -1,0 +1,2 @@
+abstract
+"The biological process of RNA translation is fundamental to cellular life and has wide-ranging implications in human disease. Yet, accurately delineating the variation in RNA translation represents a significant challenge. Here, we develop RIBO-former, a transformer model-based approach to map global RNA translation. We find that RIBO-former offers unparalleled precision and sensitivity for ribosome profiling data. Application of RIBO-former to normal brain and medulloblastoma enables high-resolution insights into disease regulation of RNA translation."

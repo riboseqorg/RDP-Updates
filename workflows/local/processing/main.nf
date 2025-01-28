@@ -37,4 +37,7 @@ workflow PROCESS {
         verified,
         geo_accessions,
     )
+
+    emit:
+    metadata = GENERATE_FIXTURES.out.fixtures
 }

@@ -5,6 +5,7 @@ nextflow.enable.dsl = 2
 // Import processes from modules
 include { COLLECT } from './workflows/local/collection/main'
 include { PROCESS } from './workflows/local/processing/main'
+include { LOAD_DATA } from './modules//local/load_data'
 
 // Parameter definitions with defaults
 params.outdir = 'results'
@@ -20,6 +21,10 @@ params.collapsed_files = "/home/jack/projects/Metadata/data/collapsed_runs_16_09
 params.verified = "/home/jack/projects/Metadata/data/verified.csv"
 params.geo_accessions = "/home/jack/projects/Metadata/data/all_GEO_accesions.csv"
 params.collect_output = null  // New parameter for skipping COLLECT
+
+params.trips_fixtures = "/home/jack/projects/Metadata/data/trips_model_fixtures.json"
+params.gwips_fixtures = "/home/jack/projects/Metadata/data/gwips_model_fixtures.json"
+params.ribocrypt_fixtures = "/home/jack/projects/Metadata/data/ribocrypt_model_fixtures.json"
 
 params.timestamp = new java.text.SimpleDateFormat("yyyy-MM-dd").format(new Date())
 
@@ -58,6 +63,7 @@ workflow {
             params.verified,
             params.geo_accessions,
         )
+        LOAD_DATA(PROCESS.out.metadata)
 }
 
 // Completion handler
